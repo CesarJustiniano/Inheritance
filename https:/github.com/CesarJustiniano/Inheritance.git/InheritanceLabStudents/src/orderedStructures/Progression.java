@@ -48,4 +48,5 @@ public abstract class Progression implements OrderedNumberStructure {
 	}
 	
 	public abstract double nextValue() throws IllegalStateException; 
+	public abstract boolean equals(Progression p);
 }
