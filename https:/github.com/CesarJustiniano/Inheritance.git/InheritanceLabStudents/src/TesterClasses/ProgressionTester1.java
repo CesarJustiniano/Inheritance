@@ -28,6 +28,7 @@ public class ProgressionTester1 {
 		p.printAllTerms(20);
 		
 		
+		
 	}
 
 }

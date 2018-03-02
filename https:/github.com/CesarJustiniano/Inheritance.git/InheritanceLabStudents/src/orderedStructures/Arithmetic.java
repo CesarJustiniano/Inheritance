@@ -11,7 +11,10 @@ public class Arithmetic extends Progression {
 	}
 	
 	@Override
-	public double nextValue() {
+	public double nextValue() throws IllegalStateException{
+		if(!isFirstExecuted()){
+			throw new IllegalStateException("FirstValue() was not executed.");
+		}
 		current = current + commonDifference; 
 		return current;
 	}
